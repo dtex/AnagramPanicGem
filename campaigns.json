@@ -1,0 +1,12 @@
+
+apg.process({
+  campaigns: [
+    {
+      name: "Google Adwords",
+      match: function(params) {
+        if (params.gclid) return true;
+        return false;
+      }
+    }
+  ]
+});
